@@ -41,9 +41,6 @@ namespace HintTextBox {
 		private readonly VisualBrush _hintBackground = new VisualBrush();
 		private Brush _background;
 
-		public TextBoxWithHint() : base() { }
-
-
 		protected override void OnInitialized(EventArgs e)
 		{
 			base.OnInitialized(e);
