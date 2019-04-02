@@ -1,5 +1,4 @@
 # TextBoxWithHint  
-[[repository](https://github.com/baejun-k/HintTextBox)]  
   
 WPF의 TextBox에 Hint 기능이 없어서 사용할 수 있게 간단하게만 만들었다.  
 TextBox를 상속하였음.
