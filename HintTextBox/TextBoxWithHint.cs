@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace HintTextBox {
+namespace Jun.UI {
 	public class TextBoxWithHint : TextBox {
 		public readonly DependencyProperty HintProperty =
 			DependencyProperty.Register(nameof(TextBoxWithHint), typeof(string),

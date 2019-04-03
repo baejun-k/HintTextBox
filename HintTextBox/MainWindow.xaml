@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HintTextBox"
+        xmlns:JUI="clr-namespace:Jun.UI"
         SizeToContent="Height"
         mc:Ignorable="d"
         Title="TextBoxWithHint" Height="450" Width="300">
     <Grid>
-        <local:TextBoxWithHint Hint="show hint" 
-                               HintForeground="DarkGray"
-                               Margin="5"
-                               VerticalAlignment="Center"
-                               HorizontalAlignment="Stretch"/>
+        <JUI:TextBoxWithHint Hint="show hint" 
+                             HintForeground="DarkGray"
+                             Margin="5"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Stretch"/>
     </Grid>
 </Window>

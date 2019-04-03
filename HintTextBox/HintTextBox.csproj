@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{82FE6ABC-2FDD-4A6D-ACCA-C09F41308BCD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HintTextBox</RootNamespace>
+    <RootNamespace>Jun.UI</RootNamespace>
     <AssemblyName>HintTextBox</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
