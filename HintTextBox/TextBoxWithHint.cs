@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -37,21 +37,21 @@ namespace Jun.UI {
 
 		protected override void OnInitialized(EventArgs e)
 		{
-			base.OnInitialized(e);
-
 			_background = Background;
-			if(HintBackground == null) { HintBackground = Background; }
+			if (HintBackground == null) { HintBackground = Background; }
 
 			var _hintVisual = new Label();
-			_hintVisual.Content = new TextBlock() {
+			_hintVisual.Content = new TextBlock()
+			{
 				Text = Hint,
 				FontStyle = base.FontStyle,
 				FontSize = base.FontSize,
-				Background = Brushes.Transparent
+				Background = Brushes.Transparent,
+				Padding = new Thickness()
+				{
+					Left = 2, Right = 2
+				}
 			};
-			_hintVisual.Padding = new Thickness(
-				Padding.Left + 2, Padding.Top + 2, 
-				Padding.Right + 2, Padding.Bottom + 2);
 			_hintVisual.Foreground = HintForeground;
 			_hintVisual.Background = HintBackground;
 
@@ -63,6 +63,8 @@ namespace Jun.UI {
 
 			if (Text.Length < 1) { Background = _hintBackground; }
 			else { Background = _background; }
+
+			base.OnInitialized(e);
 		}
 
 		protected override void OnRenderSizeChanged(SizeChangedInfo sizeInfo)
