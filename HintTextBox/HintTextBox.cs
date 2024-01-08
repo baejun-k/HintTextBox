@@ -4,18 +4,18 @@ using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace Jun.UI {
-	public class TextBoxWithHint : TextBox {
+	public class HintTextBox : TextBox {
 		public readonly DependencyProperty HintProperty =
-			DependencyProperty.Register(nameof(TextBoxWithHint), typeof(string),
-				typeof(TextBoxWithHint), new PropertyMetadata(""));
+			DependencyProperty.Register(nameof(Hint), typeof(string),
+				typeof(HintTextBox), new PropertyMetadata(""));
 
 		public readonly DependencyProperty HintForegroundProperty =
 			DependencyProperty.Register(nameof(HintForeground), typeof(Brush),
-				typeof(TextBoxWithHint), new PropertyMetadata(Brushes.LightGray));
+				typeof(HintTextBox), new PropertyMetadata(Brushes.LightGray));
 
 		public readonly DependencyProperty HintBackgroundProperty =
 			DependencyProperty.Register(nameof(HintBackground), typeof(Brush),
-				typeof(TextBoxWithHint), new PropertyMetadata(null));
+				typeof(HintTextBox), new PropertyMetadata(null));
 
 		public Brush HintForeground {
 			get { return (Brush)GetValue(HintForegroundProperty); }

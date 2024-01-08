@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:HintTextBox"
         xmlns:JUI="clr-namespace:Jun.UI"
         SizeToContent="Height"
+		WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="TextBoxWithHint" Height="450" Width="300">
     <Grid>
-        <JUI:TextBoxWithHint Hint="show hint" 
-                             HintForeground="DarkGray"
-                             Margin="5"
-                             VerticalAlignment="Center"
-                             HorizontalAlignment="Stretch"/>
+        <JUI:HintTextBox Hint="show hint" 
+						 HintForeground="DarkGray"
+						 Margin="5"
+						 VerticalAlignment="Center"
+						 HorizontalAlignment="Stretch"/>
     </Grid>
 </Window>
